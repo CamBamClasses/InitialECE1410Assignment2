@@ -1,0 +1,19 @@
+name: Grade Assignment 2
+
+on: workflow_dispatch
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  validateAssignment:
+    uses: CamBamClasses/ValidateAssignment/.github/workflows/ValidateAssignment.yml@24.01
+    with:
+      assignmentNum: 2
+      cleanRepoScore: 5
+      submitWithGithubScore: 5
+      scores: 10
+      testType: output
+      withCmake: false
+      incompletePoints: 10

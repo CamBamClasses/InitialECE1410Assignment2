@@ -1,0 +1,6 @@
+version: "3.9"
+services:
+  dev:
+    image: ghcr.io/cambamclasses/classcontainers:23.01
+    volumes:
+      - ../:/workDir
